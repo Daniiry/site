@@ -1,0 +1,435 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    /* outline: 1px solid red; */
+}
+
+@import "header";
+
+main{
+    min-height: 90vh;
+}
+
+.intro{
+    background-color: #F8F3F4;
+    height: 148px;
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text__left{
+        margin-top: 59px;
+        font-family: Lato;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    }
+    &__text__right{
+        margin-top: 65px;
+        font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+    }
+    &__text__homepage{
+        text-decoration: none;
+        color: #636363;;
+    }
+    &__span{
+        color: #F16D7F;
+        }
+}
+
+.product{
+    background-color: #F7F7F7;
+}
+.product__wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.product__photo{
+    background-image: url(../img/product_woman.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+.product__arrow{
+    margin: 365px 0;
+    z-index: 1;
+}
+.product__button{
+    background-color: rgba(42, 42, 42, 0.15);
+    border: none;
+    svg{
+        padding: 12px 17px;
+        transition: all 0.2s;
+        &:hover{
+            fill: #F16D7F;
+        }
+        &:active{
+            transform: scale(0.6);
+        }
+    }
+}
+.description{
+    &__wrap{
+    margin-top: -57px;
+    border: 1px solid #EAEAEA;
+    background-color: white;
+    }
+    &__header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__border{
+        border-bottom:1px solid #EAEAEA;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 55%;
+    }
+    &__h2{
+        text-align: center;
+        margin: 64px 0 12px 0;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #F16D7F;
+    }
+    &__h1{
+        text-align: center;
+        margin: 12px 0 0 0 ;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D4D4D;
+    }
+    &__text{
+        text-align: center; 
+        margin: 48px 0 32px 0 ;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #5E5E5E;
+    
+    }
+    &__price{
+        margin-bottom: 65px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #EF5B70;
+    }
+    &__footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 65px;
+    }
+    &__filters{
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 48px; 
+    }
+    &__filter__text{
+        text-decoration: none;
+        margin-right: 9px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+    }
+    &__button__place{
+        display: flex;
+        justify-content: center; 
+        margin-bottom: 65px;
+    }
+    &__button{
+        border: none;
+        background-color: #ffffff;
+        cursor: pointer;
+        outline: 1px solid #F26376;
+        display: flex;
+        justify-content: center; 
+        p{
+            margin: 14px 56px 14px 23px;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #F26376;
+        }
+        svg{
+            fill: #F26376;
+            margin:14px 0 9px 23px;
+        }
+        &:hover{
+            transition: all 1s;
+            transform: scale(1.05);
+            background-color: #F26376;
+            p{
+                color: white;
+            }
+            svg{
+                fill: white
+            }
+        }  
+        &:active{
+            transform: scale(0.97); 
+            transition: all 0.5s;
+            } 
+    }
+
+    
+}
+
+.category{
+    margin-bottom: 96px;
+    &__wrap{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        display: flex;
+        width: 360px;   
+        height: 260px;
+        margin: 0 0 30px 0;
+        align-items: center;
+        justify-content: center;
+        &:last-child{
+            width: 100%;
+            height: 180px;
+        }
+    }
+    &__text{ 
+        color: white;
+        text-align: center;
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 19px;
+    &__decoration{
+        text-align: center;
+        font-family: Lato;
+        font-size: 24px;
+        line-height: 29px;
+        color:#F16D7F ;
+        }
+    }
+
+}
+
+.card__box{
+    display: flex;
+    justify-content: center;
+    margin: 129px 0 128px 0 ;
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.card{
+    width: 360px;   
+    min-height: 581px;
+    background: #F8F8F8;
+    margin-top: 30px;
+    &__picture{
+        height: 420px;
+        overflow: hidden;
+        position: relative;
+    }
+    &:hover .overlay{
+        opacity: 1;
+    }
+    &:hover{
+        box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+    }
+    &__btn{
+        display: flex;
+        background-color: rgba(58, 56, 56, 0.83);
+        transition: 0.5s;
+        text-align: center;
+        border: 1px solid #ffffff;
+        svg{
+            padding: 10px 0px 8px 12px;
+        }
+        p{
+            color: #ffffff;
+            font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 13px 15px 12px 12px;
+        }
+        &:hover{
+            cursor: pointer;
+            transition: all 0.5s;
+            transform: scale(1.05);
+        }
+    }
+    &__txt{
+        margin-top: 25px;
+    }
+    &__link{
+        text-decoration: none;
+        color: #222222;
+        &:hover{
+            color: #F16D7F;
+        }
+    }
+    &__header{
+        margin: 0 0 12px 18px;
+        font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    }
+    &__text{
+        margin: 0 28px 18px 16px;
+        font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #5D5D5D;
+    }
+    &__price{
+        margin: 0 0 20px 16px;
+        font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #F16D7F;
+    }
+}
+.overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(58, 56, 56, 0.83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+@import "footer";
+
+@import "comment";
+
+@import "subscribe";
+
+@import "input";
+
+@import "copyright";
+
+@import "icon";
+
+
+@media (max-width: 768px){
+
+    .container{
+        padding: 0;
+    }
+
+    .intro__text__left{
+        margin-left: 16px;
+    }
+    .intro__text__right{
+        margin-right: 16px;
+    }
+    .description__border{
+        width: 68%;
+    }
+
+    .description__filters{
+        width: 55%;
+    }
+    .card{
+        margin: 0 16px 0 16px;
+        &:nth-child(2){
+            margin: 0 16px 0 0 ;
+        }
+    }
+
+    .card:last-child{
+        display: none;
+    }
+}
+
+@media (max-width: 375px){
+    .intro__wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .intro__text__left{
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+    .intro__text__right{
+        margin: 0 auto;
+        margin-top: 32px;
+    }
+    .product{
+        height: 624px;
+    }
+    .product__arrow{
+        margin-top: 264px;
+    }
+    .product__photo{
+        background-image: url(../img/so_small_product_woman.png);
+        background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    }
+    .description__wrap{
+        width: 99%;
+    }
+    .description__border{
+        width: 82%;
+    }
+    .description__filters{
+        width: 100%;
+    }
+    .card__box{
+        margin: 64px 0;
+    }
+    .card{
+        margin: 0 8px 0 8px;
+    }
+    .card:nth-child(2){
+        margin: 16px 8px 0 8px;
+    }
+}

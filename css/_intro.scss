@@ -1,0 +1,38 @@
+$color_black: #000000; 
+$color_purple: #F16D7F;
+
+
+
+
+.intro{
+    background-color: #F8F3F4;
+    height: 148px;
+    &__wrap{
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__text{
+        transition: all 1s;
+        margin-top: 59px;
+        font-family: Lato;
+    font-size: 24px;
+    line-height: 29px;
+    color: $color_purple;
+    }
+    &__text:hover{
+    transform: rotateX(360dgr)
+    }
+}
+
+@media (max-width: 768px){
+
+    .intro__text{
+        margin-left: 16px;
+    }
+}
+@media (max-width: 375px){
+    .intro__text{
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+}

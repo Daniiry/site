@@ -1,0 +1,27 @@
+.footer{
+    min-height: 448px;
+    background-image: url(../img/background_img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img{
+        margin-bottom: 30px;
+    }
+
+}
+
+
+@media (max-width: 768px){
+    .footer{
+    background-image: url(../img/small_background_img.png);
+    display: flex;
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        flex-direction:column ;
+    }
+    }
+}

@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    /* outline: 1px solid red; */
+}
+@import 'header';
+
+main{
+    min-height: 90vh;
+}
+
+@import "intro";
+
+@import 'register';
+
+@import "footer";
+
+@import "comment";
+
+@import "subscribe";
+
+@import "input";
+
+@import "copyright";
+
+@import "icon";
+
+@media (max-width: 768px){
+    .container{
+        padding: 0;
+    }
+}

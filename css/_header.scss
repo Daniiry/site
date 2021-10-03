@@ -1,0 +1,146 @@
+
+.header{
+    background-color: #222222;
+    padding: 19px 0;
+    position: relative;
+
+    &__2{
+        display: flex;
+        &__logo:hover{
+            transition: all 0.2s;
+            opacity: 0.6;
+            cursor: pointer;
+        }
+    }
+    &__flex{
+    
+    display: flex;
+    justify-content: space-between;
+    }
+    &__logo{
+        text-decoration: none;
+        margin-right: 41px;
+        &:last-child{
+            margin-right: 0;
+        }
+        &:last-child:hover{
+            opacity: 0.6;
+            transition: all 0.2s;
+        }
+    }
+    &__item{
+        text-decoration: none;
+    }
+    &__item:first-child{
+        padding-top: 5px;
+
+    }
+    &__item:not(:last-child){
+        margin-right: 33px;
+    }
+}
+
+.burger{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__nav{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    z-index: 5;
+    overflow: scroll;
+    z-index: 0;
+}
+.nav{
+    height:calc(100vh - 206px);
+    box-sizing: border-box;
+    padding:16px 0 0 33px;
+    width: 232px;
+    background-color: #ffffff;
+}
+#burger{
+    display: none;
+}
+#burger:checked ~ .header__nav{
+    opacity: 1;
+    z-index: 2;
+    // transition: all 1s;
+}
+
+#burger:not(:checked) ~ .header__nav{
+    opacity: 0;
+    // transition: all 1s;
+}
+.nav__wrap{
+    position: relative;
+    padding-top: 37px;
+}
+.nav__close{
+    position: absolute;
+cursor: pointer;
+top: 10px;
+right: 16px;
+}
+
+.nav__title{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding-bottom: 24px;
+}
+.nav__header{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    padding-bottom: 12px;
+}
+.nav__item{
+    list-style-type: none;
+    text-decoration: none;
+    padding-bottom: 16px;
+}
+.nav__item:last-child{
+    padding-bottom: 20px;
+}
+.nav__link{
+    text-decoration: none;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+
+@media(max-width: 768px){
+    .header{
+        padding: 19px 32px;
+    }
+}
+
+@media(max-width: 375px){
+    .header{
+        padding: 25px 26px 26px 26px;
+    }
+    .header__item:first-child{
+        margin: 0;
+    }
+    .header__item:nth-child(2){
+        display: none;
+    }
+    .header__item:nth-child(3){
+        display: none;
+    }
+    .header__nav{
+        top: 93px;
+    }
+}

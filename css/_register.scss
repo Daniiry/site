@@ -1,0 +1,155 @@
+$color_black: #000000; 
+$color_purple: #F16D7F;
+
+
+
+.register{
+    margin: 64px 0 96px 0;
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__input{
+        margin-right: 128px;
+        max-width: 360px;
+        display: flex;
+        flex-direction: column;
+    }
+     .data{
+        width: 360px;
+        margin-bottom: 20px;
+        height: 45px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .data:last-child{
+        margin-bottom: 15px;
+    }
+    &__gender{
+        display: flex;
+        flex-direction: row;
+        &__selectors{
+            margin: 0 20px 33px 0;  
+        }
+    }
+    & h1{
+        margin-bottom: 20px;
+        font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+
+color: #222222;
+    }
+    & p{
+        font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+        margin-bottom: 39px;
+    }
+    & button{
+        cursor: pointer;
+        background: $color_purple;
+        border: none;
+        max-width: 167px;
+        display: flex;
+        align-items:center ;
+        justify-content: center;
+        p{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        margin: 0;
+        padding: 16px 20px 17px 29px;
+        }
+        svg{
+            padding-right: 25px;
+            fill: #FFFFFF;
+        }
+    }
+    & button:hover{
+        transition: all 1s;
+        transform: scale(1.05);
+        outline: 1px solid $color_purple;
+        background: #FFFFFF;
+        p{
+            color: $color_purple;
+        }
+        svg{
+            fill: $color_purple;
+        }
+    }
+    & button:active{
+            transform: scale(0.97); 
+            transition: all 0.5s;
+    }
+}
+
+.bonus{
+    max-width: 652px;
+    h1{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 29px;
+    color: $color_black;
+        margin-bottom:22px ;
+    }
+    h2{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 29px;
+    color: $color_black;
+        margin-bottom: 21px;
+    }
+    p{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 29px;
+    color: $color_black;
+    margin-bottom: 16px;
+    }
+    svg{
+        margin-right: 23px;
+    }
+}
+
+@media (max-width: 768px){
+    .register__input{
+        margin-right: 44px;
+        margin-left: 16px;
+    }
+    .bonus{
+        margin-right: 16px;
+    }
+}
+
+@media (max-width: 375px){
+    .register__wrap{
+        flex-direction: column;
+    }
+    .register__input{
+        margin-right: 8px;
+        margin-left: 8px;
+        margin-bottom: 40px;
+    }
+    .register .data{
+        width: 324px;
+    }
+    .bonus{
+        margin-right: 8px ;
+        margin-left: 8px;
+    }
+}
